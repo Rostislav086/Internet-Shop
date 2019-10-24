@@ -283,6 +283,7 @@ body {
 	width: 1150px;
 	text-align: center;
 	margin-top: 79px;
+	margin-bottom: 113px;
 }
 
 .browse-all-product-button {
@@ -299,4 +300,72 @@ body {
 	letter-spacing: 0.4px;
 }
 
+.container-offer-for-women {
+	width: 1150px;
+	height: 529px;
+	background-color: #222224;
+	display: flex;
+}
 
+.container-offer-for-women li {
+	list-style: none;
+}
+
+.offer-for-women-left {
+	width: 715px;
+	color: #ffffff;
+	font-family: "Lato";
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	padding: 146px 0 0 39px;
+	background-image: url(img/offer-for-women/Layer_38.jpg);
+}
+
+.offer-for-women-left-headline {
+	font-size: 54px;
+	font-weight: 400;
+}
+
+.offer-for-women-left-offer {
+	font-weight: 700;
+	color: #f16d7f;
+}
+
+.offer-for-women-left-text {
+	font-size: 32px;
+	letter-spacing: 0.9px;
+}
+
+.offer-for-women-middle {
+	width: 111px;
+	display: flex;
+    flex-direction: column; 
+}
+
+.offer-for-women-middle li:first-child {
+	margin-top: 48px;
+	margin-bottom: 124px;
+}
+
+.offer-for-women-middle li:last-child {
+	margin-top: 114px;
+}
+
+.offer-for-women-right {
+	width: 259px;
+	color: #fbfbfb;
+	font-family: Lato;
+}
+
+.offer-for-women-right-list {
+	display: flex;
+    flex-direction: column;
+}
+
+.offer-for-women-right li{
+	margin-bottom: 75px;
+}
+
+.offer-for-women-right li:first-child {
+	margin-top: 42px;
+}
