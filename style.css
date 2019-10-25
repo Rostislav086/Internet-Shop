@@ -8,7 +8,7 @@
 }
 
 body {
-	width: 1600px;
+	width:1600px;
 	margin: 0 auto;
 }
 
@@ -37,7 +37,21 @@ body {
  }
 
 .header-left-logo-text {
+	width: 190px;
 	margin-right: 37px;
+	color: #222222;
+	font-size: 27px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-family: Lato;
+	letter-spacing: 0.68px;
+}
+
+.header-left-logo-text span {
+	color: #f16d7f;
+	font-family: "Lato";
+	font-weight: 700;
+	letter-spacing: 0.68px;
 }
 
 .header-left-logo-browse {
@@ -70,7 +84,7 @@ body {
 } 
 
 .header-right-cart img {
-	margin: 0 45px 0 349px;
+	margin: 0 45px 0 230px;
 }
 
 .header-right-button button{
@@ -272,11 +286,33 @@ body {
 }
 
 .fetured-items-clothes-list-backgraund {
-	background-image: url(img/clothes/Layer_6.png);
+	position: relative;
+	background-image: url(img/clothes/Layer_4.png);
 	background-repeat: no-repeat;
 	height: 381px;
 	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 	background-color: #ffffff;
+}
+
+.fetured-items-clothes-list-cart {
+	width: 123px;
+	height: 39px;
+	margin: 98px 70px 0;
+	position: absolute;
+	top: 0;
+	border: 1px solid #ffffff;
+	display: flex;
+	align-items: center;
+    color: #ffffff;
+	font-family: Lato;
+	font-size: 13px;
+	font-weight: 700;
+	padding-right: 13px;
+}
+
+.fetured-items-clothes-list-cart-img {
+	width: 23px;
+	height: 22px;
 }
 
 .browse-all-product {
@@ -368,4 +404,264 @@ body {
 
 .offer-for-women-right li:first-child {
 	margin-top: 42px;
+}
+
+.subscribe {
+	height: 438px;
+	margin-top: 97px;
+	background-image: url(img/subscribe/back.png);
+	bac
+	display: flex;
+}
+
+.conteiner-subscribe {
+	width: 1150px;
+	display: flex;
+    margin-top: 97px;
+}
+
+.subscribe-left {
+	display: flex;
+    width: 486px;
+    margin-top: 123px;
+
+}
+.subscribe-left-img {
+	margin-left: -80px;
+    margin-right: 28px;
+}
+
+.subscribe-left-text {
+	color: #222224;
+	font-family: Lato;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 25px;
+}
+
+.subscribe-left-text-signature {
+	font-size: 16px;
+	font-family: Lato;
+	font-weight: 700;
+	color: #f16d7f;
+	letter-spacing: 0.4px;
+	margin-top: 10px;
+}
+
+.subscribe-left-text-signature-City {
+	color: #222224;
+	font-family: "Lato";
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.3px;
+}
+
+.subscribe-right {
+	text-align: center;
+	margin-top: 123px;
+}
+
+.subscribe-right p {
+	color: #222224;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+.subscribe-right-sub {
+	color: #222224;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+.subscribe-right-email {
+	width: 334px;
+	height: 46px;
+	opacity: 0.67;
+	border-radius: 23px;
+	background-color: #e1e1e1;
+	padding-left: 28px;
+	color: #222224;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+.subscribe-right-form {
+	position: relative;
+}
+.subscribe-right-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 282px;
+	width: 104px;
+	height: 46px;
+	border-radius: 0 23px 23px 0;
+	background-color: #f16d7f;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.35px;
+}
+
+.block-information {
+	width: 1150px;
+	display: flex;
+	margin-top: 123px;
+}
+
+.block-information-brand {
+	width: 417px;
+}
+
+.block-information-brand-logo {
+	display: flex;
+}
+
+.block-information-brand-logo-img {
+    margin: 5px 0 0 0;
+    width: 55px;
+}
+
+.block-information-brand-logoText {
+    margin: 10px 0 0 15px;
+    color: #3e3e40;
+	font-family: Lato;
+	font-size: 27px;
+	font-weight: 300;
+	text-transform: uppercase;
+ }
+
+ .block-information-brand-logoText span {
+	color: #f16d7f;
+	font-family: "Lato";
+	font-weight: 700;
+	letter-spacing: 0.68px;
+}
+
+.block-information-brand-text {
+	color: #898989;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 41px;
+	line-height: 22px;
+}
+
+.block-information-company-head {
+	color: #f16d7f;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.block-information-company-list {
+	list-style: none;
+	margin-top: 45px;
+}
+
+.block-information-company-link {
+	text-decoration: none;
+	color: #898989;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+.block-information-company li {
+	margin-bottom: 33px;
+}
+
+
+.block-information-inf-head {
+	color: #f16d7f;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.block-information-inf-list {
+	list-style: none;
+	margin-top: 45px;
+}
+
+.block-information-inf-link {
+	text-decoration: none;
+	color: #898989;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+.block-information-inf li {
+	margin-bottom: 33px;
+}
+
+
+.block-information-shop_category-head {
+	color: #f16d7f;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.block-information-shop_category-list {
+	list-style: none;
+	margin-top: 45px;
+}
+
+.block-information-shop_category-link {
+	text-decoration: none;
+	color: #898989;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+.block-information-shop_category li {
+	margin-bottom: 33px;
+}
+
+.footer {
+	background-color: #e6e6e6;
+	height: 79px;
+	display: flex;
+    align-items: center;
+}
+
+.container-footer {
+	width: 1150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-copyright {
+	margin: 0 0px 0 45px;
+	color: #7a7a7a;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+.footer-icons-list {
+    margin: 0 25px 0 0;
+   
+}
+.footer-icons-link {
+	text-decoration: none;
+	background-color: #ffffff;
+
 }
