@@ -1,4 +1,3 @@
-
 /* Подключаемые шрифт для текста*/
 	@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap');
 
@@ -41,8 +40,11 @@ a {
  }
 
 .header-left-logo-text {
+	margin-right: 55px;
+}
+
+.header-left-logo-text_link {
 	width: 190px;
-	margin-right: 37px;
 	color: #222222;
 	font-size: 27px;
 	font-weight: 300;
@@ -125,347 +127,87 @@ a {
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px 19px 0px;
 }
 
 .menu-list-link:hover {
-	border-bottom: 3px solid #ef5b70;;
+	border-bottom: 3px solid #ef5b70;
 }
 
 
-/* 
+/* ЗАКОНЧИЛСЯ HEADER  - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-Тут заканчивается header Меню ------------------------------------------
+.new-arrivals {
+	background-color: #f8f3f4;
+}
 
-*/
-
-.content-brand {
-	height: 615px;
-	background-color: #e8e8e8;
-	background-image: url(img/fon/backg.jpg);
-	background-position: 213px -50px;
+.conteiner-new-arrivals {
+	width: 1150px;
+	height: 150px;
 	display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.container-brand{
-	width: 1150px;
-}
-
-.content-brand-text {
-	border-left: 10px solid #f16d7f;
-	font-family: "Lato";
-}
-
-.content-brand-text h2{
-	margin-left: 12px;
-	text-transform: uppercase;
-	font-size: 55px;
-	font-weight: 700;
-	letter-spacing: 1.5px;
-	line-height: 0.75;
-}
-
-.content-brand-text p{ 
-    margin: 10px 0 0 12px;	
-	letter-spacing: 1px;
-	font-size: 40px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
- }
-
- .content-brand-text .fashion {
+.new-arrivals_Haedline {
+	margin-left: 0;
 	color: #f16d7f;
-	letter-spacing: 1px;
- }
-
- .content-offers {
- 	height: 825px;
-	margin-top: 98px;
- }
-
-.content-offers p {
-	color: #222222;
-	font-family: "Lato";
-	font-size: 18px;
-	font-weight: 700;
+	font-family: "Lato - Black";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 20px;
 	text-transform: uppercase;
-	letter-spacing: 0.45px;
-	display: inline-block;
-	padding: 16px 20px 16px 19px;
-	background-color: #ffffff;
-	margin-top: 26px;
 }
 
-.content-offers span {
-	color: #f16d7f;
-	font-size: 30px;
-	letter-spacing: 0.75px;
+.new-arrivals_menu {
+	margin-right: 0px;
 }
 
- .conteiner-offers {
-  	width: 1150px;
-  	display: flex;
- }
-
-.content-offers-left {
-    margin-right: 20px;
+.new-arrivals_menu_list {
+	display: flex;
+    margin-right: 0px;
+    list-style: none;
 }
 
-.content-offers-left-bottom {
-	width: 560px;
-	height: 261px;
-}
-
-.content-offers-left-top {
-	background-image: url(img/offers/man.jpg);
-	width: 560px;
-	height: 542px;
-	margin-bottom: 20px;
-}
-
-.content-offers-left-bottom {
-	width: 560px;
-	height: 261px;
-	background-image: url(img/offers/step.jpg);
-}
-
-.content-offers-right-top {
-	background-image: url(img/offers/girl.jpg);
-	width: 560px;
-	height: 261px;
-	margin-bottom: 20px;
-}
-
-.content-offers-right-bottom {
-	background-image: url(img/offers/boy.jpg);
-	width: 560px;
-	height: 542px;
-}
-
-.container-feturned-items {
-	width: 1150px;
-	margin-top: 100px;
-	text-align: center;
-} 
-
-.fetured-items-text-headline {
-	color: #222222;
-	font-family: Lato;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 0.75px;
-}
-
-.fetured-items-textall {
-	margin-top: 16px;
-	color: #9f9f9f;
+.new-arrivals_menu_link {
+	color: #636363;
 	font-family: Lato;
 	font-size: 14px;
-	font-weight: 400;
-}
-
-.fetured-items-clothes {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.fetured-items-product {
-	margin-top: 60px;
-	height: 375px;
-	position: relative;
-}
-
-.fetured-items-product:hover .fetured-items-product-add {
-	display: block;
-}
-
-.fetured-items-product-img {
-	width: 100%;
-}
-
-.fetured-items-product:hover {
-	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-}
-
-.fetured-items-product:hover .fetured-items-product-img {
-	filter: brightness(50%);
-}
-
-
-.fetured-items-product-link {
-	text-decoration: none;
-}
-
-.fetured-items-product-text{
-	text-align: left;
-	margin: 20px 0 0 0;
-}
-
-.fetured-items-product-headline {
-	color: #222222;
-	font-family: Lato;
-	font-size: 14px;
-	font-weight: 400;
+	font-weight: 300;
+	line-height: 20px;
 	text-transform: uppercase;
-	margin-left: 15px;
+	margin-right: 3px;
 }
 
-.fetured-items-product-price {
+.new-arrivals_menu_link:hover {
 	color: #f16d7f;
-	font-family: Lato;
-	font-size: 16px;
 	font-weight: 700;
-	text-transform: uppercase;
-	margin-top: 17px;
-	margin-left: 15px;
 }
 
-.fetured-items-product-add {
-	width: 123px;
-	height: 39px;
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 13px;
-	font-weight: 700;
-	border: 1px solid #fff;
-	display: none;
-	position: absolute;
-	top: 98px;
-	left: 70px;
-	line-height: 39px;
-	text-align: center;
-}
-
-.fetured-items-product-add:hover {
-	box-shadow: 0 0 5px #fff;
-}
-
-.fetured-items-product-add-img {
-	margin-right: 8px;
-}
-
-
-
-.browse-all-product {
+.container-order {
 	width: 1150px;
-	text-align: center;
-	margin-top: 79px;
-	margin-bottom: 113px;
-}
-
-.browse-all-product-button {
-	width: 212px;
-	height: 48px;
-	background-color: #f16d7f;
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-}
-
-.browse-all-product-first-letter {
-	letter-spacing: 0.4px;
-}
-
-.container-offer-for-women {
-	width: 1150px;
-	height: 529px;
-	background-color: #222224;
-	display: flex;
-}
-
-.container-offer-for-women li {
-	list-style: none;
-}
-
-.offer-for-women-left {
-	width: 715px;
-	color: #ffffff;
-	font-family: "Lato";
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
-	padding: 146px 0 0 39px;
-	background-image: url(img/offer-for-women/Layer_38.jpg);
-}
-
-.offer-for-women-left-headline {
-	font-size: 54px;
-	font-weight: 400;
-}
-
-.offer-for-women-left-offer {
-	font-weight: 700;
-	color: #f16d7f;
-}
-
-.offer-for-women-left-text {
-	font-size: 32px;
-	letter-spacing: 0.9px;
-}
-
-.offer-for-women-middle {
-	width: 111px;
-	display: flex;
-    flex-direction: column; 
-}
-
-.offer-for-women-middle li:first-child {
-	margin-top: 48px;
-	margin-bottom: 124px;
-}
-
-.offer-for-women-middle li:last-child {
-	margin-top: 114px;
-}
-
-.offer-for-women-right {
-	width: 259px;
-	color: #fbfbfb;
-	font-family: Lato;
-}
-
-.offer-for-women-right-list {
-	display: flex;
-    flex-direction: column;
-}
-
-.offer-for-women-right li{
-	margin-bottom: 75px;
-}
-
-.offer-for-women-right li:first-child {
-	margin-top: 42px;
 }
 
 
 
-/* 
-
-Тут начинается наш Footer  ------------------------------------------
-
-*/
-
+/* Тут начинается FOOTER  - - - - - - - - - - - - - - - - - - - - - - - */
 
 .subscribe {
 	height: 438px;
 	margin-top: 97px;
 	background-image: url(img/subscribe/back.png);
-	bac
 	display: flex;
 }
 
 .conteiner-subscribe {
 	width: 1150px;
 	display: flex;
-    margin-top: 97px;
+    margin-top: 123px;
 }
 
 .subscribe-left {
 	display: flex;
     width: 486px;
-    margin-top: 123px;
 
 }
 .subscribe-left-img {
@@ -500,7 +242,6 @@ a {
 
 .subscribe-right {
 	text-align: center;
-	margin-top: 123px;
 }
 
 .subscribe-right p {
@@ -641,6 +382,8 @@ a {
 	margin-top: 45px;
 }
 
+
+
 .block-information-inf li {
 	margin-bottom: 33px;
 }
@@ -693,3 +436,7 @@ a {
 	text-decoration: none;
 	background-color: #ffffff;
 }
+
+
+
+
