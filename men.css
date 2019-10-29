@@ -336,11 +336,21 @@ details[open] > summary::after {
 	font-size: 14px;
 	font-weight: 400;
 	background-color: #fff;
+	padding: 5px 10px;
+}
+
+.sort_input { 
+	color: #6f6e6e;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 4px 10px;
 }
 
 .catalog-show {
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
 .catalog-show_product {
@@ -390,11 +400,105 @@ details[open] > summary::after {
 	margin-left: 15px;
 }
 
+.container-left-bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 43px;
+	align-items: center;
+}
+
+.pagination-left {
+	margin-left: 0;
+}
+
+.pagination-left_list {
+	display: flex;
+	width: 261px;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #ebebeb;
+}
+
+.pagination-left_li {
+	margin-right: 5px;
+}
+
+.pagination-left_link {
+	color: #c4c4c4;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.pagination-left_link:hover {
+	color: #f16d7f;
+	font-size: 17px;
+}
+
+.pagination-right {
+	margin-right: 0;
+
+}
+
+.pagination-right_bt {
+	display: block;
+	width: 150px;
+	height: 44px;
+	border-radius: 3px;
+	border: 1px solid #ef5b70;
+	text-align: center;
+	line-height: 44px;
+	color: #ef5b70;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.pagination-right_bt:hover{
+	box-shadow: 2px 2px 9px #ef5b70;
+}
+
+.carpercentcrown {
+	background-color: #222224;
+	margin-top: 110px;
+}
+
+.container-carpercentcrown {
+	width: 1150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-carpercentcrown {
+	margin-top: 90px;
+	margin-bottom: 90px;
+	text-align: center;
+}
+.delivery_headline {
+	margin-top: 32px;
+	color: #fbfbfb;
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+.delivery_text {
+	width: 310px;
+	margin-top: 17px;
+	color: #fbfbfb;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.35px;
+	line-height: 20px;
+}
+
+
 /* Тут начинается FOOTER  - - - - - - - - - - - - - - - - - - - - - - - */
 
 .subscribe {
 	height: 438px;
-	margin-top: 97px;
 	background-image: url(img/subscribe/back.png);
 	display: flex;
 }
