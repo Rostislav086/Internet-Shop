@@ -183,6 +183,12 @@ li {
 	margin-right: 3px;
 }
 
+.new-arrivals_menu li:last-child a {
+	color: #f16d7f;
+	font-weight: 400;
+}
+
+
 .new-arrivals_menu_link:hover {
 	color: #f16d7f;
 	font-weight: 700;
