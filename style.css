@@ -944,15 +944,15 @@ details[open] > summary::after {
     margin-bottom: 42px;
 }
 
-.carousel-control-next {
-    display: block;
-    border: 1px solid #000;
-}
+
 
 .collection {
+    position: relative;
+    top: -80px;
     text-align: center;
     width: 1141px;
     border: 1px solid #eaeaea;
+    background-color: #fff;
 
 }
 
@@ -1074,7 +1074,6 @@ details[open] > summary::after {
 
 .like {
     text-align: center;
-    margin-top: 119px;
     color: #4d4d4d;
     font-family: "Lato";
     font-size: 24px;
@@ -1088,6 +1087,8 @@ details[open] > summary::after {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 119px;
+    margin-bottom: 72px;
 }
 
 .like_catalog {
@@ -1101,7 +1102,7 @@ details[open] > summary::after {
 }
 
 .like_catalog_product:hover {
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px #000;
 }
 
 .like_catalog_product:hover .like_catalog_img {
@@ -1120,6 +1121,7 @@ details[open] > summary::after {
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 18px;
+    padding-left: 15px;
 }
 
 .catalog_price {
@@ -1128,6 +1130,7 @@ details[open] > summary::after {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 15px;
 }
 
 
