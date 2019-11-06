@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>BRAND</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключаем FontAwesome-->
+    <script src="https://kit.fontawesome.com/e0bb5d7622.js" crossorigin="anonymous"></script>
+    <!-- Подключаем BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <div class="conteiner">
-          <header class="header">
+</head>
+<body style="margin: 0 auto">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <header class="header">
             <div class="container-header">
                 <div class="header-left">
                     <div class="header-left-logo">
@@ -57,7 +60,7 @@
                     </div>
                 </div>
                 <div class="header-right">
-                    <div class="header-right-cart"><a href="#" class="header-right-cart-link"><img src="img/header/cart.svg" alt="cart"></a></div>
+                    <div class="header-right-cart"><a href="women.html" class="header-right-cart-link"><img src="img/header/cart.svg" alt="cart"></a></div>
                     <div class="header-right-button"><button>My Account</button></div>
                 </div>
             </div>
@@ -153,7 +156,7 @@
                         </div>
                     </li>
                     <li class="menu-list-li">
-                        <a href="women.html" class="menu-list-link">Women</a>
+                        <a href="sing.html" class="menu-list-link">Women</a>
                         <div class="drop">
                             <div class="drop__flex">
                                 <h3 class="drop__h3">Women</h3>
@@ -384,8 +387,105 @@
             </div>
         </div>
 
+        <section class="shopping">
+            <div class="row shopping_headline">
+                    <div class="col-4 shopping_col_one"><h3 class="shopping_name col_one"> Product Details</h3></div>
+                    <div class="col shopping_col"><h3 class="shopping_name"> Unite Price</h3></div>
+                    <div class="col shopping_col"><h3 class="shopping_name"> Quantity</h3></div>
+                    <div class="col shopping_col"><h3 class="shopping_name"> shipping</h3></div>
+                    <div class="col shopping_col"><h3 class="shopping_name"> Subtotal</h3></div>
+                    <div class="col shopping_col"><h3 class="shopping_name"> ACTION</h3></div>
+            </div>
 
+            <div class="row shopping_product">
+                <div class="col-4 shopping_product_col_one">
+                    <div class="shopping_product_img"><img src="img/cart/Layer_43.jpg" alt=""></div>
+                    <div class="shopping_product_block">
+                        <h3 class="shopping_product_block_name">Mango  People  T-shirt</h3>
+                        <p class="shopping_product_block_color">Color: <span class="color-name">Red</span></p>
+                        <p class="shopping_product_block_size">Size: <span class="color-name">Xll</span></p>
+                    </div>
 
+                </div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $150</h3></div>
+                <div class="col shopping_product_col"><input type="number" placeholder="0" class="shopping_product_inp"></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> FREE</h3></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $300</h3></div>
+                <div class="col shopping_product_col"><a href="#" class="shopping_product_about_link"><h3 class="shopping_product_about action"> X </h3></a></div>
+            </div>
+
+            <div class="row shopping_product">
+                <div class="col-4 shopping_product_col_one">
+                    <div class="shopping_product_img"><img src="img/cart/Layer_44.jpg" alt=""></div>
+                    <div class="shopping_product_block">
+                        <h3 class="shopping_product_block_name">Mango  People  T-shirt</h3>
+                        <p class="shopping_product_block_color">Color: <span class="color-name">Red</span></p>
+                        <p class="shopping_product_block_size">Size: <span class="color-name">Xll</span></p>
+                    </div>
+
+                </div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $150</h3></div>
+                <div class="col shopping_product_col"><input type="number" placeholder="0" class="shopping_product_inp"></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> FREE</h3></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $300</h3></div>
+                <div class="col shopping_product_col"><a href="#" class="shopping_product_about_link"><h3 class="shopping_product_about action"> X </h3></a></div>
+            </div>
+
+            <div class="row shopping_product">
+                <div class="col-4 shopping_product_col_one">
+                    <div class="shopping_product_img"><img src="img/cart/Layer_45.png" alt=""></div>
+                    <div class="shopping_product_block">
+                        <h3 class="shopping_product_block_name">Mango  People  T-shirt</h3>
+                        <p class="shopping_product_block_color">Color: <span class="color-name">Red</span></p>
+                        <p class="shopping_product_block_size">Size: <span class="color-name">Xll</span></p>
+                    </div>
+
+                </div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $150</h3></div>
+                <div class="col shopping_product_col"><input type="number" placeholder="0" class="shopping_product_inp"></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> FREE</h3></div>
+                <div class="col shopping_product_col"><h3 class="shopping_product_about"> $300</h3></div>
+                <div class="col shopping_product_col"><a href="#" class="shopping_product_about_link"><h3 class="shopping_product_about action"> X </h3></a></div>
+            </div>
+        </section>
+
+        <div class="shopping_button">
+            <div class="shopping_btn">
+                <a href="#" class="shopping_btn_link"><h3 class="shopping_btn_text">CLEAR SHOPPING CART</h3></a>
+            </div>
+            <div class="shopping_btn">
+                <a href="#" class="shopping_btn_link"><h3 class="shopping_btn_text">CONTINUE SHOPPING</h3></a>
+            </div>
+        </div>
+
+        <section class="shipping">
+            <div class="shipping_block adress">
+                <h3 class="shipping_headline">Shipping Adress</h3>
+                <input list="country" class="shipping_inp shipping_choose" placeholder="Bangladesh">
+                <datalist id="country">
+                    <option value="Russia"></option>
+                    <option value="USA"></option>
+                    <option value="Ukraine"></option>
+                    <option value="New Zeland"></option>
+                 </datalist>
+                 <input type="text" class="shipping_inp" placeholder="State">
+                 <input type="text" class="shipping_inp" placeholder="Postcode/Zip">
+                 <a href="#" class="shipping_block_link"><button class="shipping_btn adress">get a quote</button></a>
+            </div>
+            <div class="shipping_block coupon">
+                <h3 class="shipping_headline">coupon  discount</h3>
+                <p class="shipping_text">Enter your coupon code if you have one</p>
+                <input type="text" class="shipping_inp" placeholder="State">
+                <a href="#" class="shipping_block_link"><button class="shipping_btn adress">Apply coupon</button></a>
+            </div>
+            <div class="shipping_block checkout">
+                <div class="shipping_checkout">
+                <p class="shipping_text chekout_top">Sub total     <span class="sub_price">$900</span></p>
+                <p class="shipping_text chekout_bottom">GRAND TOTAL <span class="grand_price">$900</span></p>
+                </div>
+                <a href="#" class="shipping_block_link"><button class="shipping_btn checkout_btn">proceed to checkout</button></a>
+            </div>
+        </section>
 
 
 
@@ -466,7 +566,6 @@
         <section class="order">
 
         </section>
-    </div>
 
     <footer class="footer">
         <div class="container-footer">
@@ -482,5 +581,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
