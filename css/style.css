@@ -103,6 +103,9 @@ a {
   letter-spacing: 0.68px;
   margin-right: 37px; }
 
+.browse_bt {
+  z-index: 2; }
+
 .browse_head {
   color: #222222;
   font-family: Lato;
@@ -156,6 +159,7 @@ a {
   display: flex; }
 
 .menu-list-li {
+  text-decoration: none;
   z-index: 1;
   position: relative;
   list-style: none;
@@ -170,7 +174,6 @@ a {
   display: flex; }
 
 .menu-list-link {
-  text-decoration: none;
   color: #222222;
   font-size: 14px;
   font-weight: 700;
@@ -692,14 +695,14 @@ details[open] > summary::after {
 
 .sort {
   height: 30px;
-  margin-left: 22px;
-  padding: 5px 10px; }
+  margin-left: 22px; }
   .sort_label {
     color: #6f6e6e;
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
-    background-color: #fff; }
+    background-color: #fff;
+    padding: 5px 10px; }
   .sort_input {
     color: #6f6e6e;
     font-family: Lato;
@@ -1333,6 +1336,10 @@ a {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px; }
+  .subscribe-right-button:hover {
+    color: #222224;
+    -webkit-box-shadow: 0 2px 5px #222224;
+    box-shadow: 0 2px 5px #222224; }
 
 .conteiner-subscribe {
   width: 1150px;
