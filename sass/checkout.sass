@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap')
+@import "reset.sass"
+
+.checkout
+	width: 1150px
+	margin-top: 89px
+	&__block
+		padding-bottom: 25px
+		border-bottom: 1px solid #e8e8e8
+	&__details
+		display: flex
+		justify-content: space-between
+	&__headline
+		padding-top: 25px
+		color: #222222
+		font-family: "Lato"
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+	&__leftside
+		margin: 0 0 0 35px
+	&__title
+		margin-top: 33px
+		margin-bottom: 5px
+		color: #222222
+		font-family: "Lato"
+		font-size: 13px
+		font-weight: 700
+		text-transform: uppercase
+		&_input:after
+			content: ' *'
+			color: #ff0d0d
+			font-size: 17px
+	&__text
+		color: #b3b2b2
+		font-family: Lato
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		&_aboutblock
+			margin-top: 33px		
+		&_about
+			margin-bottom: 0
+		&_about::before
+			content: '>>'
+			width: 8px
+			height: 8px
+			color: #b3b2b2
+			font-family: "Font Awesome"
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+		&_end
+		&_forgot
+			color: #222222
+			font-family: Lato
+			font-size: 14px
+			font-weight: 400
+			line-height: 20px
+		&_inp
+			font-family: Lato
+			font-size: 12px
+			font-weight: 700
+			text-transform: uppercase
+		&_text
+			margin-top: 7px
+			color: #ff0d0d
+			font-family: Lato
+			font-size: 13px
+			font-weight: 400
+			line-height: 20px
+	&__input
+		margin-top: 35px
+	&__inp
+	&__button
+		margin-top: 38px
+		display: flex
+    	align-items: center
+	&__link
+		margin-left: 0
+		text-decoration: none
+	&__bt
+		width: 180px
+		height: 50px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		color: #4a4a4a
+		font-family: Lato
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		line-height: 50px
+		margin-left: 0
+		transition: color .2s, box-shadow .2s, background-color .2s
+	&__bt:hover
+		color: #fff
+		box-shadow: 2px 2px 7px #000
+		background-color: #f16d7f
+	&__rightside
+		margin: 0 170px 0 0
+	&__inputform
+		padding: 0 15px
+		width: 390px
+		height: 45px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		color: #222224
+	    font-family: Lato
+	    font-size: 14px
+	    font-weight: 400
+
+summary::after
+  display: none

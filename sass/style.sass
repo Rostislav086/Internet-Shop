@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap')
+@import 'reset.sass'
 
-* 
+*
   margin: 0 auto
   padding: 0
 
-body 
+body
   width: 1600px
   margin: 0 auto
-a 
+
+a,a:hover
   text-decoration: none
+
+p
+  margin: 0
 
 .header 
   height: 100px
@@ -27,7 +32,7 @@ a
     display: flex
   &-left-logo-browse button
     width: 87px
-    height: 38px
+    height: 36px
     border-radius: 3px 0 0 3px
     border: 1px solid #e6e6e6
     background-color: #cdcdcc
@@ -48,7 +53,11 @@ a
     align-items: center
   &-right-cart img
     margin: 0 45px 0 230px
+    transition: transform .2s
+  &-right-cart:hover img
+    transform: scale(1.3) rotate(45deg)
   &-right-button button
+    border-radius: 3px
     width: 130px
     height: 38px
     background-color: #f16d7f
@@ -57,6 +66,10 @@ a
     font-size: 15px
     font-weight: 400
     letter-spacing: 0.38px
+    transition: color .2s, transform .2s
+  &-right-button:hover button
+    color: #000
+    transform: scale(1.2)
 
 .container-header 
   width: 1150px
@@ -64,6 +77,7 @@ a
   justify-content: space-between
 
 .logo-heaedline 
+  margin-bottom: 0
   margin-right: 37px
   color: #222222
   font-size: 27px
@@ -78,6 +92,9 @@ a
   font-weight: 700
   letter-spacing: 0.68px
   margin-right: 37px
+
+.browse__inp__text
+  padding: 0 15px
 
 .browse_bt 
   z-index: 2
@@ -127,7 +144,6 @@ a
   display: flex
 
 .menu-list-li
-  text-decoration: none
   z-index: 1
   position: relative
   list-style: none
@@ -138,15 +154,17 @@ a
 
 .menu-list-li:hover .drop 
   display: flex
+  opacity: 1
 
 .menu-list-link 
+  text-decoration: none
   color: #222222
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
   padding: 25px 0 25px 0
 
-.menu-list-link:hover 
+.menu-list-link:hover
   border-bottom: 3px solid #ef5b70
 
 .drop 
@@ -154,9 +172,11 @@ a
   top: 36px
   padding: 20px
   display: none
+  opacity: 0
   border: 1px solid #e8e8e8
   border-radius: 5px
   background: #fff
+  transition: opacity .2s
   &::before
     content: ''
     display: block
@@ -197,10 +217,12 @@ a
     line-height: 40px
     margin-bottom: 20px
   &__link
+    text-decoration: none
     color: #646464
     font-family: Lato
     font-size: 14px
     font-weight: 400
+    transition: color .3s
   &__link:hover
     color: #ef5b70
 
@@ -314,13 +336,15 @@ a
   margin-top: 60px
   height: 375px
   position: relative
+  transition: box-shadow .2s
 
 
 .fetured-items-product:hover .fetured-items-product-add 
-  display: block
+  display: flex
 
 .fetured-items-product-img 
   width: 100%
+  transition: filter .2s
 
 .fetured-items-product:hover 
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
@@ -342,6 +366,10 @@ a
   font-weight: 400
   text-transform: uppercase
   margin-left: 15px
+  transition: color .2s
+
+.fetured-items-product-headline:hover
+  color: #f16d7f
 
 .fetured-items-product-price 
   color: #f16d7f
@@ -365,13 +393,15 @@ a
   top: 98px
   left: 70px
   line-height: 39px
-  text-align: center
+  align-items: center
+  transition: box-shadow .5s
 
 .fetured-items-product-add:hover 
   box-shadow: 0 0 5px #fff
 
 .fetured-items-product-add-img 
   margin-right: 8px
+  margin-left: 8px
 
 .browse-all-product 
   width: 1150px
@@ -386,9 +416,10 @@ a
     font-family: Lato
     font-size: 16px
     font-weight: 700
+    transition: color .2s, transform .2s
   &-button:hover
-    filter: brightness(90%)
-    box-shadow: 0 0 5px #222222
+    color: #000
+    transform: scale(1.1)
   &-first-letter
     letter-spacing: 0.4px
 
@@ -454,10 +485,15 @@ a
 
 @import "cart.sass"
 
+/* Тут заканчивается Cart  начинается checkout  ------------------------------------------*/
+
+@import "checkout.sass"
+
 .subscribe 
   height: 438px
   margin-top: 97px
-  background-image: url(../img/subscribe/back.png)
+  background-image: url(../img/subscribe/back.jpg)
+  background-position: -10px 0 
   display: flex
 
 .subscribe-left
@@ -480,6 +516,7 @@ a
     color: #f16d7f
     letter-spacing: 0.4px
     margin-top: 10px
+    margin-bottom: 0
   &-text-signature-City
     color: #222224
     font-family: Lato
@@ -505,12 +542,12 @@ a
     letter-spacing: 0.6px
     text-transform: uppercase
   &-email
-    width: 250px
+    width: 305px
     height: 46px
     opacity: 0.67
     border-radius: 23px
     background-color: #e1e1e1
-    padding-right: 70px
+    padding-right: 25px
     padding-left: 28px
     color: #222224
     font-family: Lato
@@ -532,6 +569,7 @@ a
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
+    transition: color .3s, box-shadow .3s
   &-button:hover
       color: #222224
       box-shadow: 0 2px 5px #222224
@@ -583,9 +621,10 @@ a
     font-size: 16px
     font-weight: 400
     letter-spacing: 0.4px
+    transition: color .3s, border-bottom .3s
   &-link:hover
     color: #f16d7f
-    border-bottom: 3px solid #ef5b70
+    border-bottom: 2px solid #ef5b70
   &-company li
     margin-bottom: 33px
   &-inf-head
@@ -631,6 +670,7 @@ a
     font-weight: 400
     background-color: #ffffff
     margin-right: 8px
+    transition: background-color .3s, color .3s
   &-icons-link:hover
     background-color: #f16d7f
     color: #fff

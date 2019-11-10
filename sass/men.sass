@@ -70,9 +70,10 @@
     font-size: 14px
     font-weight: 400
     list-style: none
+    transition: color .2s, font-size .2s
   &_link:hover
     color: #ef5b70
-    font-size: 16px
+    font-size: 15px
 
 .list
   margin-bottom: 41px
@@ -109,6 +110,9 @@ details[open] > summary::after
   text-transform: uppercase
   margin-bottom: 25px
 
+.price_slider
+  width: 262px
+
 .trending_style_list
   display: flex
   justify-content: space-between
@@ -120,6 +124,7 @@ details[open] > summary::after
   margin-bottom: 7px
 
 .trending_style_link
+  text-decoration: none
   color: #6f6e6e
   font-family: Lato
   font-size: 14px
@@ -132,6 +137,7 @@ details[open] > summary::after
 .form_xs
   display: flex
   flex-wrap: wrap
+  justify-content: space-between
 
 .size_check
   margin-left: 0
@@ -158,19 +164,27 @@ details[open] > summary::after
 .sort
   height: 30px
   margin-left: 22px
+  display: flex
   &_label
+    border: 1px solid #ebebeb
     color: #6f6e6e
     font-family: Lato
     font-size: 14px
     font-weight: 400
     background-color: #fff
     padding: 5px 10px
+    &_show
+      margin-left: 10px
   &_input
+    border: 1px solid #ebebeb
+    width: 130px
     color: #6f6e6e
     font-family: Lato
     font-size: 14px
     font-weight: 400
     padding: 4px 10px
+  &_input::-webkit-calendar-picker-indicator
+    opacity: 100
 
 .catalog-show
   display: flex
@@ -179,8 +193,10 @@ details[open] > summary::after
     margin-top: 60px
     height: 375px
     position: relative
+    transition: box-shadow .2s
   &_product_img
     width: 100%
+    transition: filter .2s
   &_product:hover
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
   &_product:hover .catalog-show_product_img
@@ -248,8 +264,12 @@ details[open] > summary::after
     font-family: Lato
     font-size: 16px
     font-weight: bold
+    transition: transform .2s, background-color .2s, color .2s
   &_bt:hover
-    box-shadow: 2px 2px 9px #ef5b70
+    transform: scale(1.2)
+    background-color: #ef5b70
+    color: #FFF
+
 
 
 .carpercentcrown
