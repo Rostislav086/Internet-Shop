@@ -56,6 +56,26 @@ button {
 input, button, textarea {
   font-family: inherit; }
 
+@-webkit-keyframes focus {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes focus {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
 * {
   margin: 0 auto;
   padding: 0; }
@@ -347,7 +367,9 @@ p {
   align-items: center; }
   .content-brand-text {
     border-left: 10px solid #f16d7f;
-    font-family: Lato; }
+    font-family: Lato;
+    -webkit-animation: focus 1s 1 linear;
+    animation: focus 1s 1 linear; }
   .content-brand-text h2 {
     margin-left: 12px;
     text-transform: uppercase;
