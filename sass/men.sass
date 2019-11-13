@@ -115,12 +115,11 @@ details[open] > summary::after
 
 .trending_style_list
   display: flex
-  justify-content: space-between
   flex-wrap: wrap
   list-style: none
 
 .trending_style_li
-  margin-right: 2px
+  margin-right: 2px2
   margin-bottom: 7px
 
 .trending_style_link
@@ -130,6 +129,12 @@ details[open] > summary::after
   font-size: 14px
   font-weight: 400
 
+.trending_style_link::before
+  content: ' | '
+  color: #6f6e6e
+  font-family: Lato
+  font-size: 14px
+
 .size
   width: 235px
   margin-left: 115px
@@ -137,25 +142,22 @@ details[open] > summary::after
 .form_xs
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
-
-.size_check
-  margin-left: 0
-  margin-right: 2px
-
-.size_name
-  margin: 0 25px 0 0
+  flex-grow: 1
   color: #6f6e6e
   font-family: "Open Sans"
   font-size: 14px
   font-weight: 400
-  text-transform: uppercase
+  text-transform: uppercase 
+
+.form_name
+  flex-grow: 1
+  flex-basis: 60px
 
 .price
   border: 1px solid #000
 
 .right-middle
-  height: 50px
+  height: 35px
   margin-top: 42px
   background-color: #f3f3f3
   display: flex
@@ -177,7 +179,7 @@ details[open] > summary::after
       margin-left: 10px
   &_input
     border: 1px solid #ebebeb
-    width: 130px
+    width: 100px
     color: #6f6e6e
     font-family: Lato
     font-size: 14px
@@ -190,7 +192,7 @@ details[open] > summary::after
   display: flex
   flex-wrap: wrap
   &_product
-    margin-top: 60px
+    margin-top: 45px
     height: 375px
     position: relative
     transition: box-shadow .2s
