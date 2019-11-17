@@ -1,0 +1,307 @@
+
+.new-arrivals
+  background-color: #f8f3f4
+  &_Haedline
+    margin-left: 0
+    color: #f16d7f
+    font-family: Lato
+    font-size: 24px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+  &_menu
+    margin-right: 0
+  &_menu_list
+    display: flex
+    margin-right: 0
+    list-style: none
+  &_menu_link
+    color: #636363
+    font-family: Lato
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+    text-transform: uppercase
+    margin-right: 3px
+  &_menu_link:hover
+    color: #f16d7f
+    font-weight: 700
+  &_menu li:last-child a
+    color: #f16d7f
+    font-weight: 400
+
+.conteiner-new-arrivals
+  width: 1150px
+  height: 150px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.catalog
+  width: 1150px
+  display: flex
+  margin-top: 59px
+
+.left-menu
+  width: 295px
+  &_name
+    height: 37px
+    color: #ef5b70
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    border-left: 5px solid #ef5b70
+    line-height: 37px
+    text-align: left
+    margin-bottom: 22px
+    border-bottom: 1px solid #ebebeb
+    padding-left: 15px
+    display: flex
+    justify-content: space-between
+  &_list
+    list-style: none
+  &_li
+    margin-bottom: 22px
+    padding-left: 25px
+  &_link
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    list-style: none
+    transition: color .2s, font-size .2s
+  &_link:hover
+    color: #ef5b70
+    font-size: 15px
+
+.list
+  margin-bottom: 41px
+
+summary::-webkit-details-marker
+  display: none
+
+summary::after
+  content: '\25BC'
+  color: #636363
+
+details[open] > summary::after
+  content: '\25B2'
+  color: #ef5b70
+
+.catalog-right
+  margin-left: 56px
+  width: 100%
+
+.right_top
+  display: flex
+  justify-content: space-between
+
+.trending
+  width: 176px
+  margin-left: 0
+  margin-right: 0
+
+.top_headline
+  color: #6f6e6e
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 25px
+
+.price_slider
+  width: 262px
+
+.trending_style_list
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+
+.trending_style_li
+  margin-right: 2px2
+  margin-bottom: 7px
+
+.trending_style_link
+  text-decoration: none
+  color: #6f6e6e
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+
+.trending_style_link::before
+  content: ' | '
+  color: #6f6e6e
+  font-family: Lato
+  font-size: 14px
+
+.size
+  width: 235px
+  margin-left: 115px
+
+.form_xs
+  display: flex
+  flex-wrap: wrap
+  flex-grow: 1
+  color: #6f6e6e
+  font-family: "Open Sans"
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase 
+
+.form_name
+  flex-grow: 1
+  flex-basis: 60px
+
+.price
+  border: 1px solid #000
+
+.right-middle
+  height: 35px
+  margin-top: 42px
+  background-color: #f3f3f3
+  display: flex
+  align-items: center
+
+.sort
+  height: 30px
+  margin-left: 22px
+  display: flex
+  &_label
+    border: 1px solid #ebebeb
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    background-color: #fff
+    padding: 5px 10px
+    &_show
+      margin-left: 10px
+  &_input
+    border: 1px solid #ebebeb
+    width: 100px
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    padding: 4px 10px
+  &_input::-webkit-calendar-picker-indicator
+    opacity: 100
+
+.catalog-show
+  display: flex
+  flex-wrap: wrap
+  &_product
+    margin-top: 45px
+    height: 375px
+    position: relative
+    transition: box-shadow .2s
+  &_product_img
+    width: 100%
+    transition: filter .2s
+  &_product:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+  &_product:hover .catalog-show_product_img
+    filter: brightness(50%)
+  &_product_link
+    text-decoration: none
+  &_product_text
+    text-align: left
+    margin: 20px 0 0 0
+  &_product_headline
+    color: #222222
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    margin-left: 15px
+    margin-top: 19px
+  &_product_price
+    color: #f16d7f
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 17px
+    margin-left: 15px
+
+
+.container-left-bottom
+  display: flex
+  justify-content: space-between
+  margin-top: 43px
+  align-items: center
+
+.pagination-left
+  margin-left: 0
+  &_list
+    display: flex
+    list-style: none
+    width: 261px
+    height: 44px
+    line-height: 44px
+    border: 1px solid #ebebeb
+  &_li
+    margin-right: 5px
+  &_link
+    color: #c4c4c4
+    font-family: Lato
+    font-size: 16px
+    font-weight: bold
+  &_link:hover
+    color: #f16d7f
+    font-size: 17px
+
+.pagination-right
+  margin-right: 0
+  &_bt
+    display: block
+    width: 150px
+    height: 44px
+    border-radius: 3px
+    border: 1px solid #ef5b70
+    text-align: center
+    line-height: 44px
+    color: #ef5b70
+    font-family: Lato
+    font-size: 16px
+    font-weight: bold
+    transition: transform .2s, background-color .2s, color .2s
+  &_bt:hover
+    transform: scale(1.2)
+    background-color: #ef5b70
+    color: #FFF
+
+
+
+.carpercentcrown
+  background-color: #222224
+  margin-top: 110px
+
+.container-carpercentcrown
+  width: 1150px
+  display: flex
+  justify-content: space-between
+
+.block-carpercentcrown
+  margin-top: 90px
+  margin-bottom: 90px
+  text-align: center
+
+.delivery_headline
+  margin-top: 32px
+  color: #fbfbfb
+  font-family: Lato
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+
+.delivery_text
+  width: 310px
+  margin-top: 17px
+  color: #fbfbfb
+  font-family: Lato
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 0.35px
+  line-height: 20px

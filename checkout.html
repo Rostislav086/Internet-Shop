@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BRAND</title>
+<meta charset="UTF-8">
+    <title>Checkout</title>
      <!-- Подключаем Style-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -13,8 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <div class="conteiner">
+
         <header class="header">
             <div class="container-header">
                 <div class="header-left">
@@ -430,268 +430,114 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> 
+        
+		<section class="checkout">
+			<div class="checkout__block">
+				<details class="checkout__details" open>
+					<summary class="checkout__headline">01. Shipping Adress</summary>
+					<div class="checkout__details">	
+					<div class="checkout__leftside">
+						<div class="checkout__title">Check as a guest or register</div>
+						<div class="checkout__text">Register with us for future convenience</div>
+						<div class="checkout__input">
+							<input type="radio" class="checkout__inp" id="check1" name="register"> <label for="check1" class="checkout__text_inp">checkout as guest</label> <br>
+							<input type="radio" class="checkout__inp" checked id="check2" name="register"> <label for="check2" class="checkout__text_inp">register </label> 
+						</div>
+						<div class="checkout__title">register and save time!</div>
+						<div class="checkout__text">Register with us for future convenience</div>
+						<div class="checkout__text checkout__text_aboutblock">
+							<p class="checkout__text checkout__text_about">Fast and easy checkout</p>
+							<p class="checkout__text checkout__text_about">Easy access to your order history and status</p>
+						</div>
+						<div class="checkout__button">
+							<a href="#" class="checkout__link"><button class="checkout__bt">Continue</button></a>	
+						</div>
+					</div>
+					<div class="checkout__rightside">
+						<div class="checkout__title">Already registed?</div>
+						<div class="checkout__text">Please log in below</div>
+						<div class="checkout__input">
+							<p class="checkout__title checkout__title_input">EMAIL ADDRESS</p>
+							<input type="email" class="checkout__inputform" required placeholder="Enter Your Email">
+						</div>
+						<div class="checkout__input">
+							<p class="checkout__title checkout__title_input">PASSWORD</p>
+							<input type="text" class="checkout__inputform" required placeholder="Enter Your Password">
+							<p class="checkout__text checkout__text_text">*Required Fileds</p>
+						</div>
+						<div class="checkout__button">
+							<a href="#" class="checkout__link"><button class="checkout__bt">Log in</button></a>
+							<a href="#" class="checkout__link checkout__link_forgot"><p class="checkout__text checkout__text_forgot">Forgot Password ?</p></a>
+						</div>
+					</div>
+					</div>
+				</details>
+			</div>
+			<div class="checkout__block">
+				<details class="checkout__details">
+					<summary class="checkout__headline">02. BILLING INFORMATION</summary>
+					<div class="checkout__details">	
+					<div class="checkout__leftside">
+						<div class="checkout__title">Check as a guest or register</div>
+						<div class="checkout__text">Register with us for future convenience</div>
+						<div class="checkout__input">
+							<input type="radio" class="checkout__inp" id="check1" name="register"> <label for="check1" class="checkout__text_inp">checkout as guest</label> <br>
+							<input type="radio" class="checkout__inp" checked id="check2" name="register"> <label for="check2" class="checkout__text_inp">register </label> 
+						</div>
+						<div class="checkout__title">register and save time!</div>
+						<div class="checkout__text">Register with us for future convenience</div>
+						<div class="checkout__text checkout__text_aboutblock">
+							<p class="checkout__text checkout__text_about">Fast and easy checkout</p>
+							<p class="checkout__text checkout__text_about">Easy access to your order history and status</p>
+						</div>
+						<div class="checkout__button">
+							<a href="#" class="checkout__link"><button class="checkout__bt">Continue</button></a>	
+						</div>
+					</div>
+					<div class="checkout__rightside">
+						<div class="checkout__title">Already registed?</div>
+						<div class="checkout__text">Please log in below</div>
+						<div class="checkout__input">
+							<p class="checkout__title checkout__title_input">EMAIL ADDRESS</p>
+							<input type="email" class="checkout__inputform" required placeholder="Enter Your Email">
+						</div>
+						<div class="checkout__input">
+							<p class="checkout__title checkout__title_input">PASSWORD</p>
+							<input type="text" class="checkout__inputform" required placeholder="Enter Your Password">
+							<p class="checkout__text checkout__text_text">*Required Fileds</p>
+						</div>
+						<div class="checkout__button">
+							<a href="#" class="checkout__link"><button class="checkout__bt">Log in</button></a>
+							<a href="#" class="checkout__link checkout__link_forgot"><p class="checkout__text checkout__text_forgot">Forgot Password ?</p></a>
+						</div>
+					</div>
+					</div>
+				</details>
+			</div>
+			<div class="checkout__block">
+				<details class="checkout__details">
+					<summary class="checkout__headline">03. SHIPPING INFORMATION</summary>
+				</details>
+			</div>
+			<div class="checkout__block">
+				<details class="checkout__details">
+					<summary class="checkout__headline">04. SHIPPING METHOD</summary>
+				</details>
+			</div>
+			<div class="checkout__block">
+				<details class="checkout__details">
+					<summary class="checkout__headline">05. PAYMENT METHOD</summary>
+				</details>
+			</div>
+			<div class="checkout__block">
+				<details class="checkout__details">
+					<summary class="checkout__headline">06. ORDER REVIEW</summary>
+				</details>
+			</div>
+		</section>
 
-        <div class="catalog">
-            <nav class="left-menu">
-                <details class="list" open>
-                    <summary class="left-menu_name">CATEGORY</summary>
-                    <ul class="left-menu_list">
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Accessories</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Bags</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Denim</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Hoodies & Sweatshirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Jackets & Coats</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Pants</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Polos</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shoes</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shorts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Sweaters & Knits</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">T-Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Tanks</a></li>
-                    </ul>
-                </details>
-
-                <details class="list">
-                    <summary class="left-menu_name">BRAND</summary>
-                    <ul class="left-menu_list">
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Accessories</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Bags</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Denim</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Hoodies & Sweatshirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Jackets & Coats</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Pants</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Polos</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shoes</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shorts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Sweaters & Knits</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">T-Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Tanks</a></li>
-                    </ul>
-                </details>
-
-                <details class="list">
-                    <summary class="left-menu_name">DESIGNER</summary>
-                    <ul class="left-menu_list">
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Accessories</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Bags</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Denim</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Hoodies & Sweatshirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Jackets & Coats</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Pants</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Polos</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shoes</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Shorts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Sweaters & Knits</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">T-Shirts</a></li>
-                        <li class="left-menu_li"><a href="#" class="left-menu_link">Tanks</a></li>
-                    </ul>
-                </details>
-            </nav>
-
-            <div class="catalog-right">
-                <div class="right_top">
-                    <div class="trending">
-                        <div class="top_headline">TRENDING NOW</div>
-                        <div class="trending_style">
-                            <ul class="trending_style_list">
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Bohemian</a></li>
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Floral</a></li>
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Lace</a></li>
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Floral</a></li>
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Lace</a></li>
-                                <li class="trending_style_li"><a href="#" class="trending_style_link">Bohemian</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="size">
-                        <div class="top_headline">SIZE</div>
-                        <div class="size_form">
-                            <form action="" class="form_xs">
-                                <label class="form_name">
-                                <input type="checkbox" class="size_check">XXS
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">XS
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">S
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">M
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">L
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">XL
-                                </label>
-                                 <label class="form_name">
-                                <input type="checkbox" class="size_check">XXL
-                                </label>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <div class="top_headline">PRICE</div>
-                        <div class="price_range">
-                            <input type="range" class="price_slider" min="52" max="400" step="0.01" list="range_list">
-                            <datalist id="range_list">
-                                <option value="0" label="0"></option>
-                                <option value="25" label="25"></option>
-                                <option value="50" label="50"></option>
-                                <option value="75" label="75"></option>
-                                <option value="100" label="100"></option>
-                            </datalist>
-                            <output for="range_list">$400</output>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right-middle">
-                    <div class="sort">
-                        <div class="sort_label">Sort by</div>
-                        <input id="sort_by" list="name-date" class="sort_input">
-                        <datalist id="name-date">
-                            <option value="Name"></option>
-                            <option value="Date"></option>
-                            <option value="Price Max"></option>
-                            <option value="Price Min"></option>
-                        </datalist>
-                        <div class="sort_label sort_label_show">Show</div>
-                        <input id="sort_show" list="show" class="sort_input">
-                        <datalist id="show">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                        </datalist>
-                    </div>
-                </div>
-
-                <div class="catalog-show">
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/1.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/2.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/3.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/5.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/5.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/7.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/7.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/8.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                    <div class="catalog-show_product">
-                            <a href="#"  class="catalog-show_product_link_img"><img src="img/men/8.png" alt="Mango  People  T-shirt" class="catalog-show_product_img"></a>
-                        <div class="catalog-show_product_text">
-                            <a href="#" class="catalog-show_product_link">
-                            <h2 class="catalog-show_product_headline">Mango  People  T-shirt</h2>
-                            <p class="catalog-show_product_price">$52.00</p></a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="right-bottom">
-                   <div class="container-left-bottom">
-                        <div class="pagination-left">
-                            <ul class="pagination-left_list">
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link"><</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">1</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">2</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">3</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">4</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">5</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">6</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">...</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">20</a></li>
-                                <li class="pagination-left_li"><a href="#" class="pagination-left_link">></a></li>
-                            </ul>
-                        </div>
-                     <div class="pagination-right"> <bottom class="pagination-right_bt">View All</bottom></div>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="carpercentcrown">
-            <div class="container-carpercentcrown">
-                <div class="block-carpercentcrown">
-                    <img src="img/offer-for-women/car.svg" alt="free delivery" class="delivery_img">
-                    <h2 class="delivery_headline">Free Delivery</h2>
-                    <p class="delivery_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="block-carpercentcrown">
-                    <img src="img/offer-for-women/percent.svg" alt="Sales" class="delivery_img">
-                    <h2 class="delivery_headline">Sales & discounts</h2>
-                    <p class="delivery_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="block-carpercentcrown">
-                    <img src="img/offer-for-women/crown.svg" alt="Sales" class="delivery_img">
-                    <h2 class="delivery_headline">Quality assurance</h2>
-                    <p class="delivery_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="subscribe">
+		<section class="subscribe">
             <div class="conteiner-subscribe">
                 <div class="subscribe-left">
                     <div class="subscribe-left-img">
@@ -713,7 +559,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
         <div class="block-information">
             <div class="block-information-brand">
@@ -765,9 +611,10 @@
             </div>
         </div>
 
+
     </div>
 
-    <footer class="footer">
+	<footer class="footer">
         <div class="container-footer">
             <div class="footer-copyright">
                 &copy; 2017 Brand All Rights Reserved.
